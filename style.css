@@ -1,0 +1,144 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #e4e2e2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: auto;
+    width: max-content;
+    background-color:white;
+    border: none;
+    box-shadow: 4px 4px 16px rgba(238, 85, 25, 0.2);
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.header{
+    font-size: 60px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    background-color: aqua;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+
+#addTaskBtn{
+    padding: 10px 20px;
+    background-color: #062e10;
+    color: white;
+    border: none;
+    border-radius: 10px;
+
+
+}
+#addTaskBtn:hover{
+    background-color: #1ae72b;
+    cursor: pointer; 
+
+}
+#taskInput{
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.inputTask{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: sticky;
+    bottom: 10px;
+      background-color: aqua;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 15px;
+
+}
+
+#taskList{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+li{
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.deleteBtn{
+    margin-left: 20px;
+    padding: 5px 10px;
+    background-color: #d15c5c;
+    color: rgb(31, 30, 30);
+    border: none;
+    border-radius: 5px;
+    visibility: hidden
+}
+
+.doneBtn{
+    margin-left: 20px;
+    padding: 5px 10px;
+    background-color: #4dff88;
+    color: rgb(31, 30, 30);
+    border: none;
+    border-radius: 5px;
+    visibility: hidden
+   
+}
+
+.deleteBtn:hover{
+    background-color: #f50505;
+    cursor: pointer; 
+
+}
+.doneBtn:hover{
+    background-color: #00cc44;
+    cursor: pointer; 
+
+}
+
+li:hover{
+    border: 1px solid #333;
+    padding: 1px;
+    border-radius: 10px;
+    
+    
+}
+li:hover .deleteBtn, li:hover .doneBtn{
+    visibility: visible;
+    
+}
+
+.checkBox{
+    display: none;
+    
+    
+}
+
+.showTask{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+
+
+
+
